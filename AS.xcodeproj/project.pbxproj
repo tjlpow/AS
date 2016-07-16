@@ -16,6 +16,7 @@
 		E132AD081D3961A700E5FE83 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132AD071D3961A600E5FE83 /* TableController.swift */; };
 		E132AD0A1D3962AC00E5FE83 /* CellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132AD091D3962AC00E5FE83 /* CellContent.swift */; };
 		E132AD0C1D3963EF00E5FE83 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132AD0B1D3963EF00E5FE83 /* TableCell.swift */; };
+		E132AD0E1D39E3DD00E5FE83 /* m1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E132AD0D1D39E3DD00E5FE83 /* m1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		E132AD071D3961A600E5FE83 /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		E132AD091D3962AC00E5FE83 /* CellContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellContent.swift; sourceTree = "<group>"; };
 		E132AD0B1D3963EF00E5FE83 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		E132AD0D1D39E3DD00E5FE83 /* m1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = m1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				E132ACDB1D38E17A00E5FE83 /* AppDelegate.swift */,
 				E132ACDD1D38E17A00E5FE83 /* DetailController.swift */,
 				E132ACDF1D38E17A00E5FE83 /* Main.storyboard */,
+				E132AD0D1D39E3DD00E5FE83 /* m1.swift */,
 				E132AD071D3961A600E5FE83 /* TableController.swift */,
 				E132AD0B1D3963EF00E5FE83 /* TableCell.swift */,
 				E132ACE21D38E17A00E5FE83 /* Assets.xcassets */,
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E132AD081D3961A700E5FE83 /* TableController.swift in Sources */,
+				E132AD0E1D39E3DD00E5FE83 /* m1.swift in Sources */,
 				E132ACDE1D38E17A00E5FE83 /* DetailController.swift in Sources */,
 				E132ACDC1D38E17A00E5FE83 /* AppDelegate.swift in Sources */,
 				E132AD0C1D3963EF00E5FE83 /* TableCell.swift in Sources */,

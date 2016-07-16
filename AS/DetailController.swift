@@ -10,6 +10,8 @@ import UIKit
 
 class DetailController: UIViewController {
 
+    @IBOutlet weak var animationView: m1!
+    @IBOutlet weak var playButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +22,10 @@ class DetailController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func playAnimation(sender: AnyObject) {
+        animationView.animationStart()
+            
+    }
 
 }
 
