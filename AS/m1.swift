@@ -53,8 +53,9 @@ class m1: UIView {
         return CGSize(width: 150, height: 250)
     }
         
-    func animationStart() {
+    func animationStart(speed: Float) {
         
+        layer.speed = speed
         let slideIn = CASpringAnimation(keyPath: "position.y")
         slideIn.fromValue = layer.bounds.height + layer.bounds.height*0.5/2
         slideIn.toValue = layer.bounds.height - layer.bounds.height * (0.5/2-0.1)
@@ -63,8 +64,13 @@ class m1: UIView {
         slideIn.duration = slideIn.settlingDuration
         rect.addAnimation(slideIn, forKey: nil)
         
+        
     }
         
+    func slowAnimation() {
         
+        self.animationStart(0.2)
+        
+    }
         
 }

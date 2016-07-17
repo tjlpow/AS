@@ -13,6 +13,7 @@ class DetailController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var animationView: m1!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var slowButton: UIButton!
     
     override func viewDidAppear(animated: Bool) {
         
@@ -34,8 +35,15 @@ class DetailController: UIViewController {
     }
 
     @IBAction func playAnimation(sender: AnyObject) {
-        animationView.animationStart()
-            
+        
+        animationView.animationStart(1.0)
+        
+    }
+    
+    
+    @IBAction func slowAnimation(sender: AnyObject) {
+        
+        animationView.slowAnimation()
     }
 
 }

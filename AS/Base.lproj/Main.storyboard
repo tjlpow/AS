@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--ProjectName-->
+        <!--Project-->
         <scene sceneID="BTf-ex-dbq">
             <objects>
                 <tableViewController id="QbR-SJ-O2Y" customClass="TableController" customModule="AS" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,7 +44,7 @@
                             <outlet property="delegate" destination="QbR-SJ-O2Y" id="Mgy-3R-Yt4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ProjectName" id="bds-2i-jEZ"/>
+                    <navigationItem key="navigationItem" title="Project" id="bds-2i-jEZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ul-tf-Gfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,11 +65,6 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4v-B1-KfQ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSn-x0-kuy">
-                                        <rect key="frame" x="400.5" y="330" width="48" height="33"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="SLOW"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97h-NZ-5t3">
                                         <rect key="frame" x="279" y="330" width="42" height="33"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
@@ -79,7 +74,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfW-Y3-0XD">
-                                        <rect key="frame" x="146.5" y="330" width="52" height="33"/>
+                                        <rect key="frame" x="30" y="330" width="52" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="SCALE"/>
                                     </button>
@@ -98,11 +93,17 @@
                                             <constraint firstItem="lga-sJ-qaV" firstAttribute="centerY" secondItem="Fra-Hm-7Z0" secondAttribute="centerY" id="iO8-pq-1lu"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bFB-4l-qhv">
-                                        <rect key="frame" x="30" y="390" width="540" height="133"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="bFB-4l-qhv">
+                                        <rect key="frame" x="30" y="390" width="540" height="352"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVL-Ar-wNq">
-                                                <rect key="frame" x="0.0" y="0.0" width="540" height="133"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvt-h6-tWu">
+                                                <rect key="frame" x="0.0" y="0.0" width="540" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVL-Ar-wNq">
+                                                <rect key="frame" x="0.0" y="28" width="540" height="133"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="5sA-yp-gpx"/>
@@ -116,8 +117,48 @@
                                                     </mask>
                                                 </variation>
                                             </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaf-7U-KWJ">
+                                                <rect key="frame" x="0.0" y="168" width="540" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMa-uc-65V">
+                                                <rect key="frame" x="0.0" y="195" width="540" height="157"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="7Vc-j5-Y30"/>
+                                                </constraints>
+                                                <string key="text">func animationStart() { 
+
+   let slideIn = CASpringAnimation(keyPath: "position.y")
+   slideIn.fromValue = layer.bounds.height + layer.bounds.height*0.5/2
+   slideIn.toValue = layer.bounds.height - layer.bounds.height * (0.5/2-0.1)
+   slideIn.damping = 17
+   slideIn.initialVelocity = 10
+   slideIn.duration = slideIn.settlingDuration
+   rect.addAnimation(slideIn, forKey: nil)      
+ }
+</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="11"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="7Vc-j5-Y30"/>
+                                                    </mask>
+                                                </variation>
+                                            </textView>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSn-x0-kuy">
+                                        <rect key="frame" x="522" y="330" width="48" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="SLOW"/>
+                                        <connections>
+                                            <action selector="slowAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="paK-2W-Z2L"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Fra-Hm-7Z0" firstAttribute="centerX" secondItem="O4v-B1-KfQ" secondAttribute="centerX" id="2Dv-SU-1Og"/>
@@ -132,9 +173,17 @@
                                     <constraint firstItem="97h-NZ-5t3" firstAttribute="top" secondItem="Fra-Hm-7Z0" secondAttribute="bottom" constant="30" id="d7a-Bs-eSu"/>
                                     <constraint firstItem="bFB-4l-qhv" firstAttribute="top" secondItem="qfW-Y3-0XD" secondAttribute="bottom" constant="30" id="gve-Ll-Nrv"/>
                                     <constraint firstItem="bFB-4l-qhv" firstAttribute="leading" secondItem="O4v-B1-KfQ" secondAttribute="leading" constant="30" id="hq3-mL-Kcx"/>
+                                    <constraint firstAttribute="trailing" secondItem="VSn-x0-kuy" secondAttribute="trailing" constant="30" id="j97-Hl-EHy"/>
                                     <constraint firstItem="VSn-x0-kuy" firstAttribute="centerY" secondItem="97h-NZ-5t3" secondAttribute="centerY" id="kqY-8N-27l"/>
                                     <constraint firstItem="VSn-x0-kuy" firstAttribute="leading" secondItem="97h-NZ-5t3" secondAttribute="trailing" constant="80" id="sfn-7D-jKD"/>
+                                    <constraint firstItem="qfW-Y3-0XD" firstAttribute="leading" secondItem="O4v-B1-KfQ" secondAttribute="leading" constant="30" id="wI4-zE-DKV"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Dhr-Z2-29H"/>
+                                        <exclude reference="sfn-7D-jKD"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -149,6 +198,7 @@
                         <outlet property="animationView" destination="lga-sJ-qaV" id="g4i-n1-qkO"/>
                         <outlet property="playButton" destination="97h-NZ-5t3" id="vQH-sm-wzg"/>
                         <outlet property="scrollView" destination="O4v-B1-KfQ" id="c0Q-pQ-zEE"/>
+                        <outlet property="slowButton" destination="VSn-x0-kuy" id="fOf-b4-nUz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

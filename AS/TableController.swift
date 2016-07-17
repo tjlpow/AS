@@ -23,10 +23,10 @@ class TableController: UITableViewController {
     
     func loadSampleCell() {
         //let image1 = UIImage(named: "")!
-        let content1 = CellContent(name: "Caprese Salad", image: nil )
+        let content1 = CellContent(name: "SlideIn", image: nil )
         
         //let image2 = UIImage(named: "")!
-        let content2 = CellContent(name: "Caprese Salad" , image: nil)
+        let content2 = CellContent(name: "SlideOut" , image: nil)
         
         cellContent += [content1, content2]
         
