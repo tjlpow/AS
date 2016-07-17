@@ -87,8 +87,8 @@
 			children = (
 				E132ACDB1D38E17A00E5FE83 /* AppDelegate.swift */,
 				E132ACDD1D38E17A00E5FE83 /* DetailController.swift */,
-				E132ACDF1D38E17A00E5FE83 /* Main.storyboard */,
 				E132AD0D1D39E3DD00E5FE83 /* m1.swift */,
+				E132ACDF1D38E17A00E5FE83 /* Main.storyboard */,
 				E132AD071D3961A600E5FE83 /* TableController.swift */,
 				E132AD0B1D3963EF00E5FE83 /* TableCell.swift */,
 				E132ACE21D38E17A00E5FE83 /* Assets.xcassets */,
