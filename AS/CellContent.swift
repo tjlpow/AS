@@ -19,5 +19,6 @@ class CellContent {
         // Initialize stored properties.
         self.name = name
         self.image = image
+        
     }
 }

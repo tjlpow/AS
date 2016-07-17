@@ -23,8 +23,8 @@ class DetailController: UIViewController {
     }
 
     @IBAction func playAnimation(sender: AnyObject) {
+        
         animationView.animationStart()
-            
     }
 
 }
