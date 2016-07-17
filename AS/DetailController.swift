@@ -10,11 +10,22 @@ import UIKit
 
 class DetailController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var animationView: m1!
     @IBOutlet weak var playButton: UIButton!
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        //scrollView.contentSize = CGSizeMake(0, 10000)
+    }
+        
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+      
+        
     }
 
     override func didReceiveMemoryWarning() {
