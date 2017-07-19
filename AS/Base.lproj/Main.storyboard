@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="89I-cJ-dY1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="89I-cJ-dY1">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -94,7 +94,7 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="bFB-4l-qhv">
-                                        <rect key="frame" x="30" y="390" width="540" height="352"/>
+                                        <rect key="frame" x="30" y="390" width="540" height="373"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvt-h6-tWu">
                                                 <rect key="frame" x="0.0" y="0.0" width="540" height="21"/>
@@ -102,13 +102,12 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVL-Ar-wNq">
-                                                <rect key="frame" x="0.0" y="28" width="540" height="133"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" text="Example of the simple description of the SlideIn Animation, let others know what it is and where it can be use. " translatesAutoresizingMaskIntoConstraints="NO" id="gVL-Ar-wNq">
+                                                <rect key="frame" x="0.0" y="28" width="540" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="5sA-yp-gpx"/>
                                                 </constraints>
-                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consec tetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 <variation key="default">
@@ -118,28 +117,27 @@
                                                 </variation>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaf-7U-KWJ">
-                                                <rect key="frame" x="0.0" y="168" width="540" height="21"/>
+                                                <rect key="frame" x="0.0" y="84" width="540" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMa-uc-65V">
-                                                <rect key="frame" x="0.0" y="195" width="540" height="157"/>
+                                                <rect key="frame" x="0.0" y="112" width="540" height="221"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="7Vc-j5-Y30"/>
                                                 </constraints>
-                                                <string key="text">func animationStart() { 
+                                                <mutableString key="text">func animationStart() { 
 
-   let slideIn = CASpringAnimation(keyPath: "position.y")
-   slideIn.fromValue = layer.bounds.height + layer.bounds.height*0.5/2
-   slideIn.toValue = layer.bounds.height - layer.bounds.height * (0.5/2-0.1)
-   slideIn.damping = 17
+   let slideIn = CASpringAnimation(keyPath: "position.y") 
+   slideIn.fromValue = layer.bounds.height + layer.bounds.height * 0.5/2
+       slideIn.toValue = layer.bounds.height - layer.bounds.height * (0.5/2-0.1)
+       slideIn.damping = 17
    slideIn.initialVelocity = 10
-   slideIn.duration = slideIn.settlingDuration
+       slideIn.duration = slideIn.settlingDuration
    rect.addAnimation(slideIn, forKey: nil)      
- }
-</string>
+ } </mutableString>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -149,6 +147,14 @@
                                                     </mask>
                                                 </variation>
                                             </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18a-MZ-feN">
+                                                <rect key="frame" x="0.0" y="340" width="540" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                <state key="normal" title="Copy to Mac"/>
+                                                <connections>
+                                                    <action selector="copyToMac:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MOx-yg-OLA"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSn-x0-kuy">
@@ -196,6 +202,7 @@
                     </view>
                     <connections>
                         <outlet property="animationView" destination="lga-sJ-qaV" id="g4i-n1-qkO"/>
+                        <outlet property="copyButton" destination="18a-MZ-feN" id="wwz-Qy-S7z"/>
                         <outlet property="playButton" destination="97h-NZ-5t3" id="vQH-sm-wzg"/>
                         <outlet property="scrollView" destination="O4v-B1-KfQ" id="c0Q-pQ-zEE"/>
                         <outlet property="slowButton" destination="VSn-x0-kuy" id="fOf-b4-nUz"/>

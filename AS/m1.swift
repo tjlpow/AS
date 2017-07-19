@@ -31,13 +31,18 @@ class m1: UIView {
     override func layoutSubviews() {
         
         layer.borderColor = UIColor.lightGrayColor().CGColor
+        layer.borderWidth = 0.5
+        
+        //layer.shadowColor = UIColor.blackColor().CGColor
+        //layer.shadowRadius = 3
+        //layer.shadowOpacity = 0.8
         
         
         let rectWidth = layer.bounds.width
         let rectHeight = layer.bounds.height * 0.5
         
         rect.frame = CGRectMake(0, layer.bounds.height - layer.bounds.height * 0.4, rectWidth , rectHeight )
-        rect.backgroundColor = UIColor.lightGrayColor().CGColor
+        rect.backgroundColor = UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1.0).CGColor
 
         /*
         rect.path = UIBezierPath(rect: CGRectMake(0, layer.bounds.height - rectHeight + 30, rectWidth , rectHeight )).CGPath

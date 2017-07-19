@@ -24,11 +24,13 @@ class TableController: UITableViewController {
     func loadSampleCell() {
         //let image1 = UIImage(named: "")!
         let content1 = CellContent(name: "SlideIn", image: nil )
-        
         //let image2 = UIImage(named: "")!
         let content2 = CellContent(name: "SlideOut" , image: nil)
+        let content3 = CellContent(name: "TouchDown" , image: nil)
+        let content4 = CellContent(name: "LongPress" , image: nil)
+        let content5 = CellContent(name: "Notification" , image: nil)
         
-        cellContent += [content1, content2]
+        cellContent += [content1, content2, content3, content4, content5]
         
     }
     
